@@ -8,13 +8,18 @@ int main()
     printf("Press 1 for Hello World\n");
     printf("Press 2 for Hello Hactoberfest\n");
     scanf("%d",&n);
-    if(n==1){
+    switch(n)
+    {
+      case 1:
           printf("Hello World\n");
           printf("I'm new to open source\n");
-    }else if (n==2){
+          break;
+
+      case 2:
           printf("Hello Hacktoberfest\n");
           printf("Let's Contribute to Open Source");
-    }else {
-        printf("***Your Choice is Invalid!! Enter valid response***");
+          break;
+
+      default:
+          printf("***Your Choice is Invalid!! Enter valid response***");
     }
-}
